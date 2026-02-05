@@ -13,7 +13,7 @@ class InterpretableTransformerEncoder(TransformerEncoderLayer):
         self.attention_weights: Optional[Tensor] = None
 
     def _sa_block(self, x: Tensor,
-                  attn_mask: Optional[Tensor], key_padding_mask: Optional[Tensor]) -> Tensor:
+                  attn_mask: Optional[Tensor], key_padding_mask: Optional[Tensor], **kwargs) -> Tensor:
         x, weights = self.self_attn(x, x, x,
                                     attn_mask=attn_mask,
                                     key_padding_mask=key_padding_mask,

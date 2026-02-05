@@ -4,6 +4,7 @@ test_batch_size: 16
 val_batch_size: 16
 train_set: 0.7
 val_set: 0.1
-path: /local/home/xkan/ABIDE/abide.npy
-stratified: True
+path: /home/tkpqz/BrainNetworkTransformer/source/dataset/raw/abide (1).npy
+#/home/tkpqz/BrainNetworkTransformer/source/dataset/raw/abide.npy
+stratified: false
 drop_last: True
