@@ -11,5 +11,5 @@ log_path: result
 save_learnable_graph: False
 
 # wandb
-wandb_entity: eggroup #kongtengrui123-missouri-science-and-technology-university
+wandb_entity: kongtengrui123-missouri-science-and-technology-university
 project: brainnetworktransformer
