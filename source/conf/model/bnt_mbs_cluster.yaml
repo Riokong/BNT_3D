@@ -1,0 +1,19 @@
+# Configuration for BNT with Cluster-Guided Multi-Block Supervision
+
+# Model name
+name: BrainNetworkTransformer_MBS_Cluster
+
+# Architecture (SAME as baseline BNT)
+sizes: [360, 100]              # Adjust if your data has 200 ROIs
+pooling: [false, true]          # Layer 0: no pooling, Layer 1: pooling
+orthogonal: true                # Orthogonal cluster centers
+freeze_center: true             # Freeze cluster centers during training
+project_assignment: true        # Projection-based assignment
+
+# Positional encoding
+pos_encoding: none              # Options: 'identity' or 'none'
+pos_embed_dim: 360              # Not used when pos_encoding=none
+
+# Cluster-guided supervision (NEW)
+supervised_layers: [0]          # Supervise layer 0 with layer 1 cluster centers
+
