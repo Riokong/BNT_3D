@@ -1,5 +1,5 @@
 defaults:
-  - dataset: ABCD
+  - dataset: ABIDE
   - model: bnt # brainnetcnn, fbnetgen, bnt, transformer
   - optimizer: adam
   - training: basic_training
@@ -9,6 +9,7 @@ defaults:
 repeat_time: 5
 log_path: result
 save_learnable_graph: False
+
 
 # wandb
 wandb_entity: kongtengrui123-missouri-science-and-technology-university

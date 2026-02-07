@@ -1,1 +1,3 @@
 from .bnt import BrainNetworkTransformer
+from .bnt_mbs import BrainNetworkTransformer_MBS
+from .bnt_mbs_cluster import BrainNetworkTransformer_MBS_Cluster

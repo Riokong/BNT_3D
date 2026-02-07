@@ -1,2 +1,4 @@
 name: Train
 epochs: 200
+
+aux_weight: 0.03  # NEW: Tune [0.01, 0.03, 0.05]
